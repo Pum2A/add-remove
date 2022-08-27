@@ -1,0 +1,59 @@
+
+    <div class="h-container">
+        <h1>
+            Witamy na stronie Prostota Zadań w której możesz zapisywać swoje zadania!
+        </h1>
+        <h2>Dzięki naszej stronie, zadana które masz do wykonania przez cały dzień, są o wiele prostsze do wykonania!</h2>
+    </div>    
+    
+    <div class="tasks-container">
+        <div class="newtask-container">
+            <p class="add-your-task">Dodaj swoje zadanie!</p>
+            <textarea name="text" id="newTask" [(ngModel)]="newTask" class="new-task"></textarea>
+            <button class="add-new-task-btn" (click)="add()">Dodaj</button>
+        </div>
+        <div class="taskslist-container">
+            <h2 class="tasks-list">Lista Zadań</h2>
+            <li *ngFor="let task of tasksList">
+                {{task}}
+                <button class="remove-btn" (click)="remove(task)">Usuń</button>  
+                <button class="done-btn" (click)="done(task)">Zrobione</button>
+              </li>
+        </div>
+
+        <div class="tasksdone-container">
+            <h2 class="donelist-text">Lista ukończonych Zadań</h2>
+            <li class="tasksdone" *ngFor="let task of tasksDone">
+                {{task}}
+                <button class="remove-btn" (click)="removeDone(task)">Usuń</button> 
+               
+            </li>
+        </div>
+    </div>
+   <!-- <div class="container">
+  <div>
+    <input type="text" [(ngModel)]="newTask">
+    <button (click)="add()">Dodaj</button>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <ul>
+      <li *ngFor="let task of tasksList">
+        {{task}}
+        <button (click)="remove(task)">Usuń</button>  
+        <button (click)="done(task)">Zrobione</button>
+      </li>
+      
+    </ul>
+  </div>
+  <div>
+    <li *ngFor="let task of tasksDone">
+      {{task}}
+       
+    </li>
+    <ul>
+    </ul>
+
+  </div>
+</div> -->

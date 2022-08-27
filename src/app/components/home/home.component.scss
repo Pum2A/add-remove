@@ -1,0 +1,126 @@
+h1, h2, li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+textarea{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.h-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    
+}
+
+.h-container h1{
+    margin: 10px 20px;
+}
+   
+.add-your-task{
+    display: flex;
+    margin: 10px 35px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.tasks-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    max-width: 420px;
+    margin-top: 40px;
+
+}
+.newtask-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 200px;
+    
+}
+.new-task{
+    height: 8rem;
+    width: 15rem;
+    margin: 10px 0px;
+    outline: none;
+    
+    border: 3px solid #000;
+}
+.add-new-task-btn{
+    text-decoration: none;
+    border: 3px solid #000;
+    height: 4rem;
+    width: 5rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.taskslist-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 200px;
+    margin-top: 70px;
+    
+  
+}
+.remove-btn{
+    margin: 10px 10px;
+    text-decoration: none;
+    border: 3px solid #000;
+    background-color: rgb(205, 27, 27);
+    text-shadow: #000 0px 0px 3px;
+    color: #fff;
+    height: 2.2rem;
+    width: 4rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+.done-btn{
+    margin: 10px 0px;
+    text-decoration: none;
+    border: 3px solid #000;
+    background-color: rgb(157, 199, 94);
+    text-shadow: #000 0px 0px 3px;
+    color: #fff;
+    height: 2.2rem;
+    width: 6rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.tasks-list{
+    margin: 15px 10px;
+}
+.tasksdone-container{
+
+   position: absolute;
+   top:0;
+   right: 0;
+//    background-color: red;
+border: 3px solid #000;
+height: 60vh;
+   margin-top:250px;
+   margin-right: 100px;
+
+}
+.donelist-text{
+    margin: 10px 10px;
+}
+.tasksdone{
+    margin-left: 8px;
+}

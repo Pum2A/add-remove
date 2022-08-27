@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
-import {} from '@fortawesome/angular-fontawesome'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   title = 'add-remove';
   task!: string;
   newTask!: string;
@@ -23,6 +28,11 @@ export class AppComponent {
     this.tasksList.splice(index, 1);
   }
 
+  removeDone(task:string) {
+    const index: number = this.tasksList.indexOf(task);
+    this.tasksDone.splice(index, 1);
+
+  }
   done(task:string){
     this.tasksDone.push(task);
     this.remove(task);
@@ -30,6 +40,5 @@ export class AppComponent {
     
 
   }
-     
 
 }

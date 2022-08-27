@@ -1,0 +1,57 @@
+.top{
+    background-color: aliceblue;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(193, 201, 208);
+    user-select: none;
+}
+.logo{
+    margin: 15px 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    max-width: 75px;
+
+    &:hover{
+        color: rgb(47, 42, 42);
+        transition: 0.4s ease-out;
+
+    }
+}
+.logo-container{
+    flex: 1;
+
+}
+.menu{
+    margin: 15px 30px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+
+     &:hover{
+        color: rgb(64, 57, 57);
+        transition: 0.4s ease-out;
+ 
+     }
+}
+
+.sidenav-container{
+    display: flex;
+    justify-content: right;
+    // background-color: red;
+    // height: 10vh;
+    // width: 10vw;
+}
+.sidenav{
+    background-color: rgb(69, 68, 68);
+    height: 93vh;
+    width: 10vw;
+    border-left: 1px solid #fff;
+    position: fixed;
+    z-index: 1000;
+}
+
+    
